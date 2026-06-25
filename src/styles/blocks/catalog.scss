@@ -1,0 +1,30 @@
+.catalog__cards {
+  --column-count: 1;
+
+  display: grid;
+  grid-gap: 46px 48px;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+
+  width: 1024px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border: none;
+}
+
+@media (min-width: 488px) {
+  .catalog__cards {
+    --column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__cards {
+    --column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__cards {
+    --column-count: 4;
+  }
+}
